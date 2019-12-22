@@ -24,7 +24,7 @@ simnet
 
 ## <span id="1">安装</span>
 
-Paddle版SimNet需要PaddlePaddle Fluid v0.14.0，详细安装方式见[PaddlePaddle官网](http://www.paddlepaddle.org/)。
+Paddle版SimNet需要PaddlePaddle Fluid v1.0.2，详细安装方式见[PaddlePaddle官网](http://www.paddlepaddle.org/)。
 
 ## <span id="2">数据准备</span>
 
@@ -38,7 +38,7 @@ SimNet可以使用Pointwise与Pairwise两种类型的数据进行训练
 1 1 1 1 1   1 1 1 1 1   1
 ...
 ```
-* *测试数据格式*：Pointwsie测试数据格式与训练数据格式相同。
+* *测试数据格式*：Pointwise测试数据格式与训练数据格式相同。
 
 **Pairwise训练及测试数据格式** 
 

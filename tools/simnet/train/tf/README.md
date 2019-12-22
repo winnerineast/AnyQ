@@ -38,7 +38,7 @@ SimNet可以使用Pointwise与Pairwise两种类型的数据进行训练
 1 1 1 1 1   1 1 1 1 1   1
 ...
 ```
-* *测试数据格式*：Pointwsie测试数据格式与训练数据格式相同。
+* *测试数据格式*：Pointwise测试数据格式与训练数据格式相同。
 
 **Pairwise训练及测试数据格式** 
 
@@ -62,7 +62,7 @@ SimNet可以使用Pointwise与Pairwise两种类型的数据进行训练
 python tools/tf_record_writer.py
         pointwise //数据类型
         data/train_pointwise_data //输入路径
-        data/train_pointwise_data //输出路径
+        data/convert_train_pointwise_data //输出路径
         0 //pad的ID，一般为0
         32 //序列最大长度
 ```
@@ -74,7 +74,7 @@ python tools/tf_record_writer.py
 ```
 python tf_simnet.py
         --task train
-        --task_conf examples/cnn_pointwise.json
+        --task_conf examples/cnn-pointwise.json
 ```
 **参数说明：**
 * **task**: 任务类型 ，可选择train或predict。
@@ -138,7 +138,7 @@ python tf_simnet.py
 ```
 python tf_simnet.py
         --task predict
-        --task_conf examples/cnn_pointwise.json
+        --task_conf examples/cnn-pointwise.json
 ```
 **参数说明：**
 同模型训练部分
